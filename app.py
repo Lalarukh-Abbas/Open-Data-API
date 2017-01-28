@@ -4,14 +4,7 @@ import math
 import os
 from flask import *
 
-# education_data_enrollment_by_language = pd.read_excel('/Users/ashar/Downloads/documents-export-2015-02-15/EnrollmentByLanguage.xlsx', 0, index_col=None, na_values=['NA'])
-# education_data_sanctioned_non_teaching_staff = pd.read_excel('/Users/ashar/Downloads/documents-export-2015-02-15/SanctionedNonTeachingStaff.xlsx', 'Sheet1', index_col=None, na_values=['NA'])
-# education_data_sanctioned_teaching_staff = pd.read_excel('/Users/ashar/Downloads/PBSPSLM_2005-2013.xlsx', 'Sheet1', index_col=None, na_values=['NA'])
-# education_data_school_detailed_info = pd.read_excel('/Users/ashar/Downloads/PBSPSLM_2005-2013.xlsx', 'Sheet1', index_col=None, na_values=['NA'])
-# education_data_school_teachers_profile = pd.read_excel('/Users/ashar/Downloads/PBSPSLM_2005-2013.xlsx', 'Sheet1', index_col=None, na_values=['NA'])
-# education_data_working_non_teaching_staff = pd.read_excel('/Users/ashar/Downloads/PBSPSLM_2005-2013.xlsx', 'Sheet1', index_col=None, na_values=['NA'])
-# education_data_working_teaching_staff = pd.read_excel('/Users/ashar/Downloads/PBSPSLM_2005-2013.xlsx', 'Sheet1', index_col=None, na_values=['NA'])
-
+#REMOVED BY LALA
 ATTENDANCE_DATA_FILE = "./data_sets/PBSPSLM_2005-2013.xlsx"
 CPLC_DATA = "./data_sets/Karachi Killing Data 2013 - CPLC.xls"
 open_data_df = pd.read_excel(ATTENDANCE_DATA_FILE, 0, index_col=None, na_values=['NA'])
