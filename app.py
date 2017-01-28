@@ -53,7 +53,7 @@ def all():
             else:
                 clean[key] = row_dict[key]
         to_return['data'].append(clean)
-    to_return['data'] = to_return['data'][start_idx:end]#makes a json version of 30 queries from some startidx in the row of PBSPSLM_2005-2013.xlsx
+    to_return['data'] = to_return['data'][start_idx:end]
     to_return['end_idx'] = end
     to_return['limit'] = limit
     return jsonify(to_return)
