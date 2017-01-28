@@ -39,8 +39,16 @@ def dir():
 @app.route("/api/v1/open_data/education/all", methods=["GET"])
 def all():
     to_return = {'data':[], 'end_idx': 0, 'limit':30}
-    start_idx = int(request.args.get('start_idx') if request.args.get('start_idx') else 0)
-    limit = int(request.args.get('limit') if request.args.get('limit') else 30)
+    if request.args.get('start_idx'):
+        start_idx = int(request.args.get('start_idx'))
+    else:
+        start_idx = 0
+        
+    if request.args.get('limit'):
+        limit = int(request.args.get('limit'))
+    else:
+        limit = 30
+        
     end = start_idx+limit
     for i in range(idx_size):
         clean = {}
@@ -74,8 +82,15 @@ def download(filename):
 @app.route("/api/v1/open_data/cplc/all", methods=["GET"])
 def cplc_all():
     to_return = {'data':[], 'end_idx': 0, 'limit':30}
-    start_idx = int(request.args.get('start_idx') if request.args.get('start_idx') else 0)
-    limit = int(request.args.get('limit') if request.args.get('limit') else 30)
+    if request.args.get('start_idx'):
+        start_idx = int(request.args.get('start_idx'))
+    else:
+        start_idx = 0
+        
+    if request.args.get('limit'):
+        limit = int(request.args.get('limit'))
+    else:
+        limit = 30
     end = start_idx+limit
     for i in range(idx_size):
         clean = {}
